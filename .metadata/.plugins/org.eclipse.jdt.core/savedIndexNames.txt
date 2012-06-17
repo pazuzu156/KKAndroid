@@ -1,4 +1,0 @@
-INDEX VERSION 1.126+/home/kaleb/Desktop/KKAndroid/.metadata/.plugins/org.eclipse.jdt.core
-4167514170.index
-1917638186.index
-3578858183.index
