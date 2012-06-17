@@ -4,7 +4,7 @@ import android.app.*;
 import android.os.*;
 import android.view.*;
 import android.view.View.*;
-import android.widget.*;
+import android.widget.*d;
 import android.content.*;
 
 public class ActivityOne extends Activity implements OnClickListener {
