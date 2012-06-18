@@ -9,6 +9,7 @@ import android.widget.ListView;
 
 public class ActivityMain extends ListActivity {
 
+	// Array holding class names for menu list
 	String classes[] = { "ActivityOne" };
 
 	@Override
@@ -17,12 +18,13 @@ public class ActivityMain extends ListActivity {
 		setListAdapter(new ArrayAdapter<String>(ActivityMain.this, android.R.layout.simple_list_item_1, classes));
 	}
 
+	// Selection of the items in menu list
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		super.onListItemClick(l, v, position, id);
-		String c = classes[position];
+		String c = classes[position]; // Grab position of each item clicked
 		try {
-			Class cclass = Class.forName("com.kalebklein.ira." + c);
+			Class cclass = Class.forName("com.kalebklein.ira." + c); // class selection for the item
 			Intent i = new Intent(ActivityMain.this, cclass);
 			startActivity(i);
 		} catch(ClassNotFoundException e) {
